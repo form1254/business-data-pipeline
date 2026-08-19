@@ -1,5 +1,4 @@
 Date,EUR_USD,USD_EUR,Type,Country,Metric,Value
-2026-07-30 00:00,1.1467,0.872,Forex,,,
 2026-07-31 00:00,1.1524,0.8678,Forex,,,
 2026-08-03 00:00,1.1544,0.8662,Forex,,,
 2026-08-04 00:00,1.1507,0.869,Forex,,,
@@ -13,6 +12,7 @@ Date,EUR_USD,USD_EUR,Type,Country,Metric,Value
 2026-08-14 00:00,1.1535,0.8669,Forex,,,
 2026-08-17 00:00,1.1574,0.864,Forex,,,
 2026-08-18 00:00,1.1583,0.8633,Forex,,,
+2026-08-19 00:00,1.1579,0.8636,Forex,,,
 1970-01-01 00:00,,,Macro,DEU,Inflation,3.45
 1971-01-01 00:00,,,Macro,DEU,Inflation,5.24
 1972-01-01 00:00,,,Macro,DEU,Inflation,5.48
