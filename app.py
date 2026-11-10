@@ -28,19 +28,13 @@ try:
     # 4. Display Content based on Selection
     if selection == "Forex":
         st.subheader("💱 EUR/USD Exchange Rate (Last 14 Days)")
-
-        # The scraper writes forex as one row per day with the EUR/USD close in 'Value'.
-        # Build the EUR_USD and USD_EUR columns here so the chart and table stay unchanged.
-        forex_df = filtered_df[['Date', 'Value']].copy()
-        forex_df['EUR_USD'] = forex_df['Value']
-        forex_df['USD_EUR'] = (1 / forex_df['Value']).round(4)
-
+        
         # Display the Graph
-        st.line_chart(forex_df, x='Date', y='EUR_USD')
-
+        st.line_chart(filtered_df, x='Date', y='EUR_USD')
+        
         # Display CLEAN Table (Only Currency Columns)
         st.write("### Raw Exchange Data")
-        st.dataframe(forex_df[['Date', 'EUR_USD', 'USD_EUR']], use_container_width=True)
+        st.dataframe(filtered_df[['Date', 'EUR_USD', 'USD_EUR']], use_container_width=True)
 
     else:
         st.subheader("🌎 Macroeconomic Indicators (5 Decades)")
